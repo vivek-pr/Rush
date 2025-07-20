@@ -1,0 +1,16 @@
+[package]
+name = "rush"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+authors.workspace = true
+
+[dependencies]
+# Workspace dependencies
+serde.workspace = true
+anyhow.workspace = true
+thiserror.workspace = true
+
+[dev-dependencies]
+tokio-test = "0.4"

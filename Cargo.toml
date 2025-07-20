@@ -1,0 +1,43 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/*",
+]
+exclude = [
+    "target",
+    "docs/book",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/vivek-pr/Rush"
+authors = ["vivek <vivekpradhan.91@gmail.com>"]
+
+[workspace.dependencies]
+# Common dependencies shared across workspace
+tokio = { version = "1.0", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+anyhow = "1.0"
+thiserror = "1.0"
+cargo-llvm-cov = "0.5"
+criterion = "allow"
+proptest = "allow"
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
+unused_imports = "warn"
+unused_variables = "warn"
+dead_code = "warn"
+
+[workspace.lints.clippy]
+enum_glob_use = "warn"
+pedantic = "warn"
+nursery = "warn"
+unwrap_used = "warn"
+expect_used = "warn"
+
+
+# Development dependencies
+
