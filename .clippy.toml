@@ -1,0 +1,7 @@
+# Clippy configuration
+avoid-breaking-exported-api = false
+msrv = "1.70.0"
+
+# Allowed lints (be selective about these)
+allow-unwrap-in-tests = true
+allow-dbg-in-tests = true

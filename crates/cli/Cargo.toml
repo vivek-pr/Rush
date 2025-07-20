@@ -1,0 +1,16 @@
+[package]
+name = "rush"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+authors.workspace = true
+
+[[bin]]
+name = "rush"
+path = "src/main.rs"
+
+[dependencies]
+rush = { path = "../core" }
+clap = { version = "4.0", features = ["derive"] }
+tokio.workspace = true

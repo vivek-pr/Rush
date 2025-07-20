@@ -1,0 +1,16 @@
+[llvm-cov]
+# Coverage configuration
+no-report = false
+html = true
+lcov = true
+json = true
+text = true
+
+[llvm-cov.html]
+output-dir = "target/llvm-cov/html"
+
+[llvm-cov.lcov]
+output-path = "target/llvm-cov/lcov.info"
+
+[llvm-cov.json]
+output-path = "target/llvm-cov/coverage.json"
