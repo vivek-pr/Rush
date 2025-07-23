@@ -1,11 +1,10 @@
 use criterion::{black_box, criterion_group, criterion_main, Criterion};
-use my_rust_project_core::*;
+use rush::greet;
 
 fn benchmark_function(c: &mut Criterion) {
-    c.bench_function("example benchmark", |b| {
+    c.bench_function("greet", |b| {
         b.iter(|| {
-            // Benchmark code here
-            black_box(2 + 2)
+            black_box(greet())
         })
     });
 }

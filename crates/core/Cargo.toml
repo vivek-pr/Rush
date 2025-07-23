@@ -11,6 +11,3 @@ authors.workspace = true
 serde.workspace = true
 anyhow.workspace = true
 thiserror.workspace = true
-
-[dev-dependencies]
-tokio-test = "0.4"

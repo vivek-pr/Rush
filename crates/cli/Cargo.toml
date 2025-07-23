@@ -1,5 +1,5 @@
 [package]
-name = "rush"
+name = "rush-cli"
 version.workspace = true
 edition.workspace = true
 license.workspace = true
@@ -13,4 +13,3 @@ path = "src/main.rs"
 [dependencies]
 rush = { path = "../core" }
 clap = { version = "4.0", features = ["derive"] }
-tokio.workspace = true
