@@ -12,6 +12,3 @@ serde.workspace = true
 anyhow.workspace = true
 thiserror.workspace = true
 
-[dev-dependencies]
-tokio.workspace = true
-tokio-test = "0.4"
