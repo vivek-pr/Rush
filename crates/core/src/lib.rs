@@ -1,3 +1,3 @@
-pub fn greet() -> &'static str {
-    "Hello from Rush Core!"
-}
+
+pub mod http_client;
+
